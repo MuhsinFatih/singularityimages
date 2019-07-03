@@ -2,4 +2,6 @@ Bootstrap: docker
 From: tensorflow/tensorflow:latest-gpu-py3
 
 %post
+	apt update
+	apt install -y python3-venv
 	python3 -m pip install --user virtualenv
