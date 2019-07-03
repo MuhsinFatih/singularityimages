@@ -1,0 +1,5 @@
+Bootstrap: docker
+From: tensorflow/tensorflow:latest-gpu-py3
+
+%post
+	python3 -m pip install --user virtualenv
